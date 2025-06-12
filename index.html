@@ -3,9 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles/resset.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+    <title>Pagina presentacion</title>
 </head>
 <body>
-    <h1>Proyecto M1</h1>
+    <header>
+        <h1>Sobre Mi</h1>
+        <p>Me llamo Florencia y estoy dando mis primeros pasos en programacion.<br>
+        Me gustaria seguir aprendiendo y conocer nuevas tecnologias.</p>
+    </header>
+    <section>
+        <h2>Mis tecnologías favoritas</h2>
+
+    <div id="contenedorTarjetas">
+
+        <img class="logos" src="./styles/img/logoJava.png" alt="Logo JavaScript">
+              
+        <img class="logos" src="./styles/img/logoHTML.png" alt="Logo HTML">
+          
+        <img class="logos" src="./styles/img/logoCSS.png" alt="Logo CSS">
+            
+    </div>
+    </section>
+
+    <section id="actividades">
+        <h2>Mis actividades favoritas</h2>
+        <form id="actividad-form">
+            <label for="titulo">Título de la actividad</label>
+            <input type="text" id="titulo" required>
+
+            <label for="descripcion">Descripción</label>
+            <input type="text" id="descripcion" required>
+
+            <label for="imagen">URL de imagen</label>
+            <input type="url" id="imagen" required>
+
+            <button type="submit">Agregar actividad</button>
+        </form>
+    </section>
+    <section id="resultado">
+        <h2>Actividades agregadas:</h2>
+        <div id="contenedorActividades"></div>
+    </section>
+<script src="./scripts/index.js"></script>    
 </body>
 </html>

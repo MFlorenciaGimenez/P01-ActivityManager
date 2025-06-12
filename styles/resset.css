@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. Establecer tipografía base */
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000;
+  background-color: #fff;
+}
+
+/* 3. Eliminar estilos por defecto de listas */
+ul, ol {
+  list-style: none;
+}
+
+/* 4. Eliminar decoración de enlaces */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 5. Normalizar elementos de bloque y formulario */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+/* 6. Evitar comportamiento raro de imágenes */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 7. HTML5 elements */
+article, aside, footer, header, nav, section {
+  display: block;
+}
